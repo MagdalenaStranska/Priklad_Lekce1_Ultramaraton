@@ -5,3 +5,12 @@
 // Do proměnné konec spočítejte, v kolik hodin závod pro našeho běžce skončí a vypište její obsah do stránky.
 // Vyzkoušejte různé délky a ověřte, že váš postup funguje.
 
+let startZavodu = 15
+let delka = 12
+let konecZavodu = startZavodu + delka
+
+if (konecZavodu > 24) {
+    konecZavodu = konecZavodu - 24
+}
+
+document.body.innerHTML += konecZavodu
